@@ -3,7 +3,7 @@ if (Meteor.isClient) {
 Assumption: template_name = submitForm
 */
 Template.submitForm.events({
-	'submit form': function(event) {
+	'click .my-button': function(event) {
 		var inputHieght = $(event.target).find('[id=hieght]').val();
 		var inputWieght = $(event.target).find('[id=wieght]').val();
 		var inputAge = $(event.target).find('[id=age]').val();
