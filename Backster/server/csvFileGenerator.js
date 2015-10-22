@@ -1,4 +1,4 @@
-if (Meteor.isServer) {
+if (Meteor.isClient) {
 /*Get the input from the user 
 Assumption: template_name = submitForm
 */
