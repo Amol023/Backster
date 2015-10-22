@@ -7,6 +7,7 @@ Template.submitForm.events({
 		var inputHieght = $(event.target).find('[id=hieght]').val();
 		var inputWieght = $(event.target).find('[id=wieght]').val();
 		var inputAge = $(event.target).find('[id=age]').val();
+		var inputBCS = $(event.target).find('[id=bcs]').val();
 		/* TODO Add more input from UI to variables*/
 	}
 
