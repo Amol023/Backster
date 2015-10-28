@@ -1,0 +1,142 @@
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1D1D1D;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+}
+
+h3 {
+  margin: 0;
+  color: white;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 28px;
+}
+
+header {
+  position: relative;
+  clear: both;
+  margin: 0em;
+  height: 85px;
+  width: auto;
+  background-color: #4D9A5A;
+}
+
+img {
+	position: absolute;
+	margin: 0em;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#wrapper {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  height: auto;
+  width: 1280px;
+}
+
+#main-container {
+  float: left;
+  clear: both;
+  margin-left: 0em;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 1em;
+  height: 680px;
+  width: 100%;
+  background-color: #313131;
+  overflow: hidden;
+}
+
+#banner-background {
+  margin: 0 auto;
+  height: 85px;
+  width: 100%;
+}
+
+#banner-text {
+  margin: 5px auto;
+  height: 85px;
+  width: auto;
+}
+
+#content-background {
+  margin: 0 0;
+  height: auto;
+  width: 1280px;
+}
+
+#column-container {
+  position: relative;
+  float: left;
+  clear: both;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#column-left {
+	position: relative;
+	float: left;
+	clear: left;
+	height: 78%;
+	width: 30em;
+	margin-left: 4.0em;
+	margin-top: 1.2em;
+	margin-right: 2.5em;
+	margin-bottom: 1.2em;
+	padding: 1.0em;
+	border-radius: 18px;
+	background-color: hsla(0,0%,12%,0.92);
+}
+
+#column-right {
+	position: relative;
+	float: right;
+	clear: right;
+	height: 78%;
+	width: 30em;
+	margin-left: 2.5em;
+	margin-top: 1.2em;
+	margin-right: 4.0em;
+	margin-bottom: 1.2em;
+	padding: 1.0em;
+	border-radius: 18px;
+	background-color: hsla(0,0%,12%,0.92);
+}
+
+#copyright-container {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+}
