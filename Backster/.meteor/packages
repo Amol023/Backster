@@ -20,10 +20,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 meteorhacks:npm
 
 
-#npm-container
-pfafman:filesaver
-#bootstrap
-lfergon:exportcsv
-
-
 npm-container
+pfafman:filesaver
+lfergon:exportcsv
