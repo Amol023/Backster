@@ -42,8 +42,7 @@ var _calculateIVDA = function( userInput ) {
   }
 
   result /= (2.54*2.54);
-
-  console.log(result);
+  
   return result;
 };
 
