@@ -47,11 +47,11 @@ var _calculateIVDA = function( userInput ) {
   return result;
 };
 
-Meteor.myFunctions = {
+Meteor.bcFunctions = {
   calculateBCF : _calculateBCF,
   calculateBCS : _calculateBCS,
   calculateIVDA : _calculateIVDA,
   calculateLoadMoment : _calculateLoadMoment,
   calculateBodyMoment : _calculateBodyMoment,
   calculateBMLA : _calculateBMLA
-}
+};

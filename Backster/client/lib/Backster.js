@@ -34,21 +34,14 @@ Template.body.events({
   }
 });
 
-Template.inputForm.events({
+Template.body.events({
   'submit #input-form': function(event) {
     event.preventDefault();
 
-    var userInput = {
-      gender: event.target.gender.value,
-      height: event.target.heightInput.value,
-      weight: event.target.weightInput.value,
-      load: event.target.loadInput.value,
-      distance: event.target.distanceInput.value,
-      angle: 0
-    };
+    var userInput = Meteor.inputFunctions.getUserInput(event.target);
 
-    var userBCF = Meteor.myFunctions.calculateBCF(userInput);
-    var userBCS = Meteor.myFunctions.calculateBCS(userInput);
+    var userBCF = Meteor.bcFunctions.calculateBCF(userInput);
+    var userBCS = Meteor.bcFunctions.calculateBCS(userInput);
     console.log(userBCF, userBCS);
   }
 });
