@@ -10,7 +10,7 @@ Template.body.events({
 
     var nameFile = 'Backster.csv';
 
-    var heading = false; // Optional, defaults to true
+    var heading = true; // Optional, defaults to true
     var delimiter = ","; // Optional, defaults to ",";
     var fileContent = exportcsv.exportToCSV([userInput], heading, delimiter);
     var blob = new Blob([fileContent], {type: "text/plain;charset=utf-8"});
@@ -21,7 +21,7 @@ Template.body.events({
     event.preventDefault();
 
     var userInput = Meteor.inputFunctions.getUserInput(event.target);
-    
+
     var userBCF = Meteor.bcFunctions.calculateBCF(userInput);
     var userBCS = Meteor.bcFunctions.calculateBCS(userInput);
   }
