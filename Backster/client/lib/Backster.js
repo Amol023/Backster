@@ -24,5 +24,8 @@ Template.body.events({
 
     var userBCF = Meteor.bcFunctions.calculateBCF(userInput);
     var userBCS = Meteor.bcFunctions.calculateBCS(userInput);
+	
+	document.getElementById('displayBCF').innerHTML = userBCF.toFixed(2);
+	document.getElementById('displayBCS').innerHTML = userBCS.toFixed(2);
   }
 });

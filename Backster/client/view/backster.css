@@ -1,142 +1,86 @@
-html {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #1D1D1D;
+html, body{
+	border-top: 0 !important;
+	margin-top: 0 !important;
 }
 
 h1 {
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-  font-style: normal;
-  font-size: 20px;
+	border-top: 0 !important;
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+	color:#FFFFFF !important;
+	background-color: transparent;
+	font-size: 36px;
 }
 
-h2 {
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-  font-style: normal;
-  font-size: 48px;
-}
-
-h3 {
-  margin: 0;
-  color: white;
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-  font-style: normal;
-  font-size: 28px;
-}
-
-header {
-  position: relative;
-  clear: both;
-  margin: 0em;
-  height: 85px;
-  width: auto;
-  background-color: #4D9A5A;
+label {
+	font-size: 18px;
+	padding-top: 16px;	
 }
 
 img {
-	position: absolute;
-	margin: 0em;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	margin: 18px 0;
 }
 
-#wrapper {
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
-  clear: both;
-  margin: 0 auto;
-  height: auto;
-  width: 1280px;
+.container {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
-#main-container {
-  float: left;
-  clear: both;
-  margin-left: 0em;
-  margin-top: 0em;
-  margin-right: 0em;
-  margin-bottom: 1em;
-  height: 680px;
-  width: 100%;
-  background-color: #313131;
-  overflow: hidden;
+.jumbotron {
+	background-color:#4D4D4D;
+	background-image: url(footer_lodyas.png);
+	text-shadow: 0.2px 0.2px 0.3px black;
 }
 
-#banner-background {
-  margin: 0 auto;
-  height: 85px;
-  width: 100%;
+.form-group > * {
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
-#banner-text {
-  margin: 5px auto;
-  height: 85px;
-  width: auto;
+.btn-margin {
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
-#content-background {
-  margin: 0 0;
-  height: auto;
-  width: 1280px;
+.carousel {
+	background-color: #333333;
+	border-radius: 5px;
+	width: 85%;
 }
 
-#column-container {
-  position: relative;
-  float: left;
-  clear: both;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
+.carousel-control {
+	border-radius: 5px;	
 }
 
-#column-left {
-	position: relative;
-	float: left;
-	clear: left;
-	height: 78%;
-	width: 30em;
-	margin-left: 4.0em;
-	margin-top: 1.2em;
-	margin-right: 2.5em;
-	margin-bottom: 1.2em;
-	padding: 1.0em;
-	border-radius: 18px;
-	background-color: hsla(0,0%,12%,0.92);
-}
-
-#column-right {
-	position: relative;
-	float: right;
-	clear: right;
-	height: 78%;
-	width: 30em;
-	margin-left: 2.5em;
-	margin-top: 1.2em;
-	margin-right: 4.0em;
-	margin-bottom: 1.2em;
-	padding: 1.0em;
-	border-radius: 18px;
-	background-color: hsla(0,0%,12%,0.92);
-}
-
-#copyright-container {
-	position: relative;
-	clear: both;
+.display-wrapper {
 	margin: 0 auto;
+	width: 75%;
+}
+
+
+
+/*carousel fade effect*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
