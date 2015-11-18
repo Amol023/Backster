@@ -23,7 +23,7 @@ Template.body.events({
       var alt = active[0].nextElementSibling.children[0].alt;
     } catch (err) {
       // wrapped around
-      alt = "0";
+      alt = $('.carousel-inner')[0].firstElementChild.children[0].alt;
     }
 
     document.getElementById('input-angle').value = alt;
@@ -31,11 +31,12 @@ Template.body.events({
 
   'click .left.carousel-control': function(event) {
     var active = $('.carousel-inner .active');
+    var alt = "0";
     try {
-      var alt = active[0].previousElementSibling.children[0].alt;
+      alt = active[0].previousElementSibling.children[0].alt;
     } catch (err) {
       // wrapped around
-      alt = "90";
+      alt = $('.carousel-inner')[0].lastElementChild.children[0].alt;
     }
 
     document.getElementById('input-angle').value = alt;
