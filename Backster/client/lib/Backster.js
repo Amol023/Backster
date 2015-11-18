@@ -17,6 +17,30 @@ Template.body.events({
     saveAs(blob, nameFile);
   },
 
+  'click .right.carousel-control': function(event) {
+    var active = $('.carousel-inner .active');
+    try {
+      var alt = active[0].nextElementSibling.children[0].alt;
+    } catch (err) {
+      // wrapped around
+      alt = "0";
+    }
+
+    document.getElementById('input-angle').value = alt;
+  },
+
+  'click .left.carousel-control': function(event) {
+    var active = $('.carousel-inner .active');
+    try {
+      var alt = active[0].previousElementSibling.children[0].alt;
+    } catch (err) {
+      // wrapped around
+      alt = "90";
+    }
+
+    document.getElementById('input-angle').value = alt;
+  },
+
   'submit #input-form': function(event) {
     event.preventDefault();
 
@@ -24,8 +48,8 @@ Template.body.events({
 
     var userBCF = Meteor.bcFunctions.calculateBCF(userInput);
     var userBCS = Meteor.bcFunctions.calculateBCS(userInput);
-	
-	document.getElementById('displayBCF').innerHTML = userBCF.toFixed(2);
-	document.getElementById('displayBCS').innerHTML = userBCS.toFixed(2);
+
+    document.getElementById('displayBCF').innerHTML = userBCF.toFixed(2);
+    document.getElementById('displayBCS').innerHTML = userBCS.toFixed(2);
   }
 });

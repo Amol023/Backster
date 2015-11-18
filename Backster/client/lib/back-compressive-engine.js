@@ -37,12 +37,12 @@ var _calculateBMLA = function( userInput ) {
 var _calculateIVDA = function( userInput ) {
   var result = -16.959 + 0.179 * userInput.height * 2.54;
 
-  if (userInput.gender == 'Male') {
+  if (userInput.gender === 'Male') {
     result += 1.7;
   }
 
   result /= (2.54*2.54);
-  
+
   return result;
 };
 
