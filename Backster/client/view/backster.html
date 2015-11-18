@@ -1,28 +1,30 @@
 <head>
 <title>Backster</title>
-<link href="backster.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div id="wrapper">
-  <div id="main-container">
-    <header>
-      <img id="banner-background" src="banner-background.png" alt="Backster"/>
-      <img id="banner-text" src="banner-text.png" alt="Backster"/>
-    </header>
-    <div id="column-container">
-    <img id="content-background" src="background.png"/>
-      <div id="column-left">
-    {{> backsterDisplay}}
-      </div>
-      <div id="column-right">
-    {{> inputForm}}
-      </div>
+<div class="jumbotron">
+  <h1 class="text-center">Backster</h1>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      {{> backsterDisplay}}
+    </div>
+    
+    <div class="col-md-6">
+      {{> inputForm}}
     </div>
   </div>
-  <div id="copyright-container">
-    <h1>2015 Backster.</h1>
-    <h1>All right reserved.</h1>
-  </div>
+  
+</div>
+<br/><br/>
+<div class="footer">
+  <h5 class="text-center">Backster 2015.</h5>
+  <h5 class="text-center">All rights reserved.</h5>
 </div>
 </body>
+
+
+
