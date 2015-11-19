@@ -62,28 +62,28 @@
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Bodyweight:</label>
     <div class="col-md-9">
-      <input class="form-control" placeholder="Enter your bodyweight (lbs)" name="weightInput"/>
+      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter your bodyweight (lbs)" name="weightInput"/>
     </div>
     </div>
 
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Load:</label>
     <div class="col-md-9">
-      <input class="form-control" placeholder="Enter weight of load (lbs)" name="loadInput"/>
+      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter weight of load (lbs)" name="loadInput"/>
     </div>
     </div>
 
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Distance:</label>
     <div class="col-md-9">
-      <input class="form-control" placeholder="Enter horizontal distance (inches)" name="distanceInput"/>
+      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter horizontal distance (inches)" name="distanceInput"/>
     </div>
     </div>
 
     <div class="text-center">
       <div class="btn-group">
-      <input type="submit" value="Calculate Stress" class="btn btn-primary btn-lg btn-margin"/>
-      <input type="button" value="Save Results" id="export-file" class="btn btn-primary btn-lg btn-margin export-file"/>
+      <input type="submit" id="submitButton" disabled="disabled" value="Calculate Stress" class="btn btn-primary btn-lg btn-margin"/>
+      <input type="button" disabled="disabled" value="Save Results" id="export-file" class="btn btn-primary btn-lg btn-margin export-file"/>
       </div>
     </div>
 
