@@ -18,7 +18,8 @@ label {
 }
 
 img {
-	margin: 18px 0;
+	margin-top: 15px;
+	margin-bottom: 40px;
 }
 
 .container {
@@ -54,11 +55,9 @@ img {
 }
 
 .display-wrapper {
-	margin: 0 auto;
+	margin: 5px auto;
 	width: 75%;
 }
-
-
 
 /*carousel fade effect*/
 .carousel-fade .carousel-inner .item {
@@ -83,4 +82,161 @@ img {
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+
+.scale-rectangle1 {
+	height: 35px;
+	width: 68px;
+	margin: 0 -2px;
+	background-color: rgb(0,61,124);
+	border-color: green;
+	display: inline-block;
+}
+
+.scale-rectangle2 {
+	height: 35px;
+	width: 68px;
+	margin: 0 -2px;
+	background-color: rgb(0,77,157);
+	display: inline-block;
+}
+
+.scale-rectangle3 {
+	height: 35px;
+	width: 68px;
+	margin: 0 -2px;
+	background-color: rgb(0,85,165);
+	display: inline-block;
+}
+
+.scale-rectangle4 {
+	height: 35px;
+	width: 68px;
+	margin: 0 -2px;
+	background-color: rgb(0,94,190);
+	display: inline-block;
+}
+
+.scale-rectangle5 {
+	height: 35px;
+	width: 68px;
+	margin: 0 -2px;
+	background-color: rgb(0,108,220);
+	display: inline-block;
+}
+
+.scale-rectangle6 {
+	height: 35px;
+	width: 68px;
+	margin: 0 -2px;
+	background-color: rgb(0,126,255);
+	display: inline-block;
+}
+
+#bcf-rectangle1 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: green;
+	background-color: transparent;
+	display: none;
+}
+
+#bcf-rectangle2 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: green;
+	background-color: transparent;
+	display: none;
+}
+
+#bcf-rectangle3 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: yellow;
+	background-color: transparent;
+	display: none;
+}
+
+#bcf-rectangle4 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: yellow;
+	background-color: transparent;
+	display: none;
+}
+
+#bcf-rectangle5 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: red;
+	background-color: transparent;
+	display: none;
+}
+
+#bcf-rectangle6 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: red;
+	background-color: transparent;
+	display: none;
+}
+
+#bcs-rectangle1 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: green;
+	background-color: transparent;
+	display: none;
+}
+
+#bcs-rectangle2 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: green;
+	background-color: transparent;
+	display: none;
+}
+
+#bcs-rectangle3 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: yellow;
+	background-color: transparent;
+	display: none;
+}
+
+#bcs-rectangle4 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: yellow;
+	background-color: transparent;
+	display: none;
+}
+
+#bcs-rectangle5 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: red;
+	background-color: transparent;
+	display: none;
+}
+
+.#bcs-rectangle6 {
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	border-color: red;
+	background-color: transparent;
+	display: none;
 }

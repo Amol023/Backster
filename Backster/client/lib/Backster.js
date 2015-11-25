@@ -52,5 +52,96 @@ Template.body.events({
 
     document.getElementById('displayBCF').innerHTML = userBCF.toFixed(2);
     document.getElementById('displayBCS').innerHTML = userBCS.toFixed(2);
+	
+	if(userBCF < 386) {
+		document.getElementById('bcf-rectangle1').style.display = "block";
+		document.getElementById('bcf-rectangle2').style.display = "none";
+		document.getElementById('bcf-rectangle3').style.display = "none";
+		document.getElementById('bcf-rectangle4').style.display = "none";
+		document.getElementById('bcf-rectangle5').style.display = "none";
+		document.getElementById('bcf-rectangle6').style.display = "none";
+	}else if(userBCF < 771) {
+		document.getElementById('bcf-rectangle1').style.display = "none";
+		document.getElementById('bcf-rectangle2').style.display = "block";
+		document.getElementById('bcf-rectangle3').style.display = "none";
+		document.getElementById('bcf-rectangle4').style.display = "none";
+		document.getElementById('bcf-rectangle5').style.display = "none";
+		document.getElementById('bcf-rectangle6').style.display = "none";
+	}else if(userBCF < 1101) {
+		document.getElementById('bcf-rectangle1').style.display = "none";
+		document.getElementById('bcf-rectangle2').style.display = "none";
+		document.getElementById('bcf-rectangle3').style.display = "block";
+		document.getElementById('bcf-rectangle4').style.display = "none";
+		document.getElementById('bcf-rectangle5').style.display = "none";
+		document.getElementById('bcf-rectangle6').style.display = "none";
+	}else if(userBCF < 1431) {
+		document.getElementById('bcf-rectangle1').style.display = "none";
+		document.getElementById('bcf-rectangle2').style.display = "none";
+		document.getElementById('bcf-rectangle3').style.display = "none";
+		document.getElementById('bcf-rectangle4').style.display = "block";
+		document.getElementById('bcf-rectangle5').style.display = "none";
+		document.getElementById('bcf-rectangle6').style.display = "none";
+	}else if(userBCF < 2001) {
+		document.getElementById('bcf-rectangle1').style.display = "none";
+		document.getElementById('bcf-rectangle2').style.display = "none";
+		document.getElementById('bcf-rectangle3').style.display = "none";
+		document.getElementById('bcf-rectangle4').style.display = "none";
+		document.getElementById('bcf-rectangle5').style.display = "block";
+		document.getElementById('bcf-rectangle6').style.display = "none";
+	}else {
+		document.getElementById('bcf-rectangle1').style.display = "none";
+		document.getElementById('bcf-rectangle2').style.display = "none";
+		document.getElementById('bcf-rectangle3').style.display = "none";
+		document.getElementById('bcf-rectangle4').style.display = "none";
+		document.getElementById('bcf-rectangle5').style.display = "none";
+		document.getElementById('bcf-rectangle6').style.display = "block";
+	}
+	
+	
+	
+	
+	if(userBCS < 201) {
+		document.getElementById('bcs-rectangle1').style.display = "block";
+		document.getElementById('bcs-rectangle2').style.display = "none";
+		document.getElementById('bcs-rectangle3').style.display = "none";
+		document.getElementById('bcs-rectangle4').style.display = "none";
+		document.getElementById('bcs-rectangle5').style.display = "none";
+		document.getElementById('bcs-rectangle6').style.display = "none";
+	}else if(userBCS < 401) {
+		document.getElementById('bcs-rectangle1').style.display = "none";
+		document.getElementById('bcs-rectangle2').style.display = "block";
+		document.getElementById('bcs-rectangle3').style.display = "none";
+		document.getElementById('bcs-rectangle4').style.display = "none";
+		document.getElementById('bcs-rectangle5').style.display = "none";
+		document.getElementById('bcs-rectangle6').style.display = "none";
+	}else if(userBCS < 576) {
+		document.getElementById('bcs-rectangle1').style.display = "none";
+		document.getElementById('bcs-rectangle2').style.display = "none";
+		document.getElementById('bcs-rectangle3').style.display = "block";
+		document.getElementById('bcs-rectangle4').style.display = "none";
+		document.getElementById('bcs-rectangle5').style.display = "none";
+		document.getElementById('bcs-rectangle6').style.display = "none";
+	}else if(userBCS < 751) {
+		document.getElementById('bcs-rectangle1').style.display = "none";
+		document.getElementById('bcs-rectangle2').style.display = "none";
+		document.getElementById('bcs-rectangle3').style.display = "none";
+		document.getElementById('bcs-rectangle4').style.display = "block";
+		document.getElementById('bcs-rectangle5').style.display = "none";
+		document.getElementById('bcs-rectangle6').style.display = "none";
+	}else if(userBCS < 1001) {
+		document.getElementById('bcs-rectangle1').style.display = "none";
+		document.getElementById('bcs-rectangle2').style.display = "none";
+		document.getElementById('bcs-rectangle3').style.display = "none";
+		document.getElementById('bcs-rectangle4').style.display = "none";
+		document.getElementById('bcs-rectangle5').style.display = "block";
+		document.getElementById('bcs-rectangle6').style.display = "none";
+	}else {
+		document.getElementById('bcs-rectangle1').style.display = "none";
+		document.getElementById('bcs-rectangle2').style.display = "none";
+		document.getElementById('bcs-rectangle3').style.display = "none";
+		document.getElementById('bcs-rectangle4').style.display = "none";
+		document.getElementById('bcs-rectangle5').style.display = "none";
+		document.getElementById('bcs-rectangle6').style.display = "block";
+	}
   }
 });

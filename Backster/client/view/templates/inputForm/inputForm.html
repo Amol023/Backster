@@ -4,7 +4,7 @@
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Gender:</label>
     <div class="col-md-9">
-      <select class="form-control" name="gender">
+      <select class="form-control" data-toggle="tooltip" title="Select gender" name="gender">
       <option>Male</option>
       <option>Female</option>
       </select>
@@ -46,61 +46,64 @@
       </div>
     </div>
 
-    <!--<div class="form-group form-group-lg">
-    <label class="col-md-3 control-label">Angle:</label>
-    <div class="col-md-9">
-      <select class="form-control" data-toggle="tooltip" title="Angle of bend about the waist." name="angle">
-      <option>0.0 degrees</option>
-      <option>22.5 degrees</option>
-      <option>45.0 degrees</option>
-      <option>67.5 degrees</option>
-      <option>90.0 degrees</option>
-      </select>
-    </div>
-  </div>-->
-
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Bodyweight:</label>
     <div class="col-md-9">
-      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter your bodyweight (lbs)" name="weightInput"/>
+      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter your bodyweight (lbs)" data-toggle="tooltip" title="Weight of the participant" name="weightInput"/>
     </div>
     </div>
 
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Load:</label>
     <div class="col-md-9">
-      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter weight of load (lbs)" name="loadInput"/>
+      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter weight of load (lbs)" data-toggle="tooltip" title="Weight of the load being carried" name="loadInput"/>
     </div>
     </div>
 
     <div class="form-group form-group-lg">
     <label class="col-md-3 control-label">Distance:</label>
     <div class="col-md-9">
-      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter horizontal distance (inches)" name="distanceInput"/>
+      <input class="form-control inputValidate" type="number" min="1" step="any" placeholder="Enter horizontal distance (inches)" data-toggle="tooltip" title="Horizontal distance from hip to center of load"  name="distanceInput"/>
     </div>
     </div>
 
     <div class="text-center">
       <div class="btn-group">
-      <input type="submit" id="submitButton" disabled="disabled" value="Calculate Stress" class="btn btn-primary btn-lg btn-margin"/>
-      <input type="button" disabled="disabled" value="Save Results" id="export-file" class="btn btn-primary btn-lg btn-margin export-file"/>
+        <input type="submit" id="submitButton" disabled="disabled" value="Calculate Stress" class="btn btn-primary btn-lg btn-margin"/>
+        <input type="button" disabled="disabled" value="Save Results" id="export-file" class="btn btn-primary btn-lg btn-margin export-file"/>
       </div>
     </div>
 
     <input name="angle" id="input-angle" type="hidden" value="0">
   </form>
-
+  
   <div class="display-wrapper">
-    <div class="bcf-wrapper">
-      <label>Back-Compressive Force = </label>
-      <label id="displayBCF">0.00</label>
-    <label>lbs</label>
+      <div class="bcf-wrapper">
+        <label>BCF = </label>
+        <label id="displayBCF">0.00</label>
+        <label>lbs</label>
+	    <div>
+	      <div class="scale-rectangle1"> <div id="bcf-rectangle1"></div> </div>
+          <div class="scale-rectangle2"> <div id="bcf-rectangle2"></div> </div>
+          <div class="scale-rectangle3"> <div id="bcf-rectangle3"></div> </div>
+          <div class="scale-rectangle4"> <div id="bcf-rectangle4"></div> </div>
+          <div class="scale-rectangle5"> <div id="bcf-rectangle5"></div> </div>
+          <div class="scale-rectangle6"> <div id="bcf-rectangle6"></div> </div>
+	    </div>
+      </div>
+      
+      <div class="bcs-wrapper">
+        <label class="center-text">BCS = </label>
+        <label id="displayBCS">0.00</label>
+        <label>lbs/sq-inch</label>
+	    <div>
+	      <div class="scale-rectangle1"> <div id="bcs-rectangle1"></div> </div>
+          <div class="scale-rectangle2"> <div id="bcs-rectangle2"></div> </div>
+          <div class="scale-rectangle3"> <div id="bcs-rectangle3"></div> </div>
+          <div class="scale-rectangle4"> <div id="bcs-rectangle4"></div> </div>
+          <div class="scale-rectangle5"> <div id="bcs-rectangle5"></div> </div>
+          <div class="scale-rectangle6"> <div id="bcs-rectangle6"></div> </div>
+	    </div>
+      </div>
     </div>
-
-    <div class="bcs-wrapper">
-      <label class="center-text">Back-Compressive Stress = </label>
-    <label id="displayBCS">0.00</label>
-    <label>lbs/sq-inch</label>
-    </div>
-  </div>
 </Template>
